@@ -1,0 +1,415 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: "open";
+    src: url("../fonts/OpenSans-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "raleway";
+    src: url("../fonts/Raleway-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: "raleway";
+    src: url("../fonts/Raleway-Regular.ttf");
+    font-weight: 400;
+}
+
+
+body{
+    font-family: "open";
+    font-weight: 400;
+    color: hsl(243, 87%, 12%);
+    height: 100vh;
+}
+
+h1,p{
+    line-height: 150%;
+}
+
+h1,h2,h5{
+    font-family: "raleway";
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    padding: 45px;                             
+    font-family: "raleway";
+    font-weight: 400;
+    margin-bottom: 60px;  
+}
+
+.header--section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header--section img{
+    min-width: 375px;
+    width: 50%;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    order: 2;
+}
+
+.header--introduction{
+    width: 40%;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation img{
+    height: 40px;
+    width: auto;
+}
+
+.navigation--link  a{
+    color: hsl(243, 87%, 12%);
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.action{
+    display:block; 
+}
+
+.mail{
+    padding: 14px ;
+    border-radius: 5px;
+    background-color:white ;
+    color: hsl(0, 0%, 75%);
+    text-align: start;
+    width: 60%;
+    border: 1px solid hsl(243, 87%, 12%); 
+    outline: none;
+}
+
+.button{
+    border: none;
+    background-color: hsl(224, 93%, 58%); 
+    color: hsl(240, 75%, 98%);
+    padding: 14px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 20px;
+    width: 35%;
+    margin-left: 15px;  
+    cursor: pointer; 
+}
+
+
+.illustration--background{
+    background: url("../images/bg-curve-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 120px;
+}
+
+.information{ 
+    display: flex;
+    flex-direction: row;   
+    align-items: center;   
+    justify-content: space-between;
+    background-color: hsl(240, 75%, 98%); 
+    padding:  0 45px 100px 45px; 
+}  
+
+.information--img{    
+    min-width: 375px;
+    width: 50%;
+    height: auto;
+    order: 2;  
+}
+
+.information--detail{
+    text-align: start;
+    margin-top: 50px;
+    width: 42%;  
+}
+
+.information--detail h2{
+    font-size: 32px;
+}
+
+.information--detail p{
+    color: hsl(238, 22%, 44%);
+    padding: 30px 0;
+}
+
+.information--detail a{
+    color: hsl(170, 45%, 43%);
+    border-bottom: 1px solid hsl(170, 45%, 43%);;
+}
+
+
+.testimonial{
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 0 2px 2px  hsl(0, 0%, 75%);
+    width: 75%;               
+    border-radius: 5px;
+    margin: 30px 0;
+}
+
+.testimonial p {
+    padding: 0;
+}
+
+.avatar{
+    display: flex;
+    margin-top: 20px;
+}
+
+.avatar img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.avatar--detail{
+    margin-left: 15px;
+}
+
+.avatar p{
+    font-size: 0.8em;
+}
+
+.access{
+    background-color:hsl(238, 22%, 44%) ;
+    color:hsl(240, 75%, 98%); 
+    text-align: start;
+    padding: 50px  45px 70px 45px;     
+    display: flex;
+    flex-direction: row;   
+}
+
+.access p{
+    width: 60%;
+    margin-top: 20px;
+}
+
+.access--action{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.access--action .mail{
+    width: 100%;
+    border: none;
+}
+
+.access--action .button{
+    width: 45%;
+    margin-left: 0;
+}
+
+.footer{
+    background-color: hsl(243, 87%, 12%);
+    color: hsl(240, 75%, 98%);
+    padding: 70px 25px 50px 25px;
+}
+
+.footer svg path{
+    fill:hsl(240, 75%, 98%);
+}
+   
+.wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contact--detail{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.contact--detail p{
+    margin-left: 15px;
+}
+
+.footer--link p{
+    margin-bottom: 15px;
+}
+
+.footer--link p:hover{
+    color: hsl(224, 93%, 58%);
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    margin-right: 80px;
+}
+
+.social svg{
+    margin-left: 10px;
+}
+
+.social svg path {
+    fill:hsl(240, 75%, 98%);
+}
+
+.attribution { font-size: 11px; text-align: center;margin-top: 20px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media only screen and (max-width:850px){
+
+    .header--section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header--introduction{
+        width: 100%;
+        text-align: center;
+        order: 2;
+    }
+
+
+    .header--introduction p {
+        padding: 38px;
+    }
+
+    .navigation img{
+        height: 30px;
+        width: auto;
+    }
+
+
+    .navigation--link  a{
+        margin-left: 10px;
+    }
+
+    .action{
+        display:flex;
+        flex-direction: column;
+        padding: 0 40px;   
+    }
+
+    .mail{
+        width: 100%;
+    }
+
+    .button{
+        width: 100%;
+        margin-left:0;
+    }
+
+    .illustration--background{
+        background: url("../images/bg-curve-mobile.svg");
+        max-height: 150px;
+        max-width: 1024px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    .information{
+        display: flex;
+        flex-direction: column;   
+        align-items: center;    
+        background-color: hsl(240, 75%, 98%); 
+    } 
+
+    .information--detail{
+        padding: 0 10px;
+        margin-top: 80px;
+        order: 2;
+        width: 100%;
+    }
+    
+    .information--detail h2{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .information--detail p{
+        color: hsl(238, 22%, 44%);
+        padding: 25px 0;
+        text-align: center;
+    }
+
+    .testimonial{
+        width: 100%;
+    }
+
+    .testimonial p{
+        padding: 0;
+        font-size: 0.9em;
+        text-align: start;
+    }
+
+    .avatar--detail p {
+        font-size: 0.5em;
+    }
+
+    .access{ 
+        text-align: center;
+        padding: 50px  25px 70px 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .access p {
+        padding: 15px 55px;
+        width: 100%;
+    }
+
+    .access--action{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .access--action .button{
+        width: 100%;
+    }
+
+    .access--action .mail{
+        width: 100%;
+    }
+
+    .wrap{
+        display: block;
+    }
+
+    .contact--detail{
+        margin-top: 25px;
+    }
+
+    .footer--link {                            
+        margin-top: 25px;
+    }
+
+    .social{
+        margin-top: 50px;
+        margin-right: 0;
+    }
+       
+}
